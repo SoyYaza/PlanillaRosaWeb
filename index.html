@@ -6,6 +6,8 @@
 <title>Planilla Rosa — SUTCBEBCS 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700;900&family=Barlow+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+/* ─── ESTILOS ─── */ 
 <style>
   :root {
     --rosa: #E8197D;
@@ -798,6 +800,49 @@
     .hero-btns { flex-direction: column; }
     .hero-btns a { text-align: center; justify-content: center; }
   }
+
+  .flecha-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+/* FLECHA SUBIR*/
+.btn-flecha {
+  width: 60px;
+  height: 60px;
+  border-left: 8px solid #000;
+  border-top: 8px solid #000;
+  transform: rotate(45deg);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-flecha:hover {
+  transform: rotate(45deg) scale(1.15);
+  border-color: #E8197D;
+}
+
+.bot-cta {
+  margin-top: 15px;
+}
+
+/* BOT TELEGRAM*/
+.btn-telegram {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: black; /* color Telegram */
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-telegram:hover {
+  background-color: #E8197D; /* tu rosa */
+  transform: translateY(-2px);
+}
+
 </style>
 </head>
 <body>
@@ -846,7 +891,7 @@
           <div class="hero-stat-label">Secretarías</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-num">+20</div>
+          <div class="hero-stat-num">+40</div>
           <div class="hero-stat-label">Propuestas</div>
         </div>
         <div class="hero-stat">
@@ -867,14 +912,14 @@
   </div>
 </section>
 
-<!-- ─── MISIÓN VISIÓN ─── -->
+<!-- ─── MISIÓN VISION ─── -->
 <section id="mision">
   <div class="container">
     <div class="reveal">
       <div class="section-tag">Quiénes somos</div>
       <h2 class="section-title">Misión, Visión<br>y Objetivo</h2>
       <div class="divider"></div>
-      <p class="section-desc">Una planilla sindical comprometida con la cercanía, la transparencia y la transformación real de las condiciones laborales de los agremiados al SUTCBEBCS.</p>
+      <p class="section-desc">Somos una Planilla Sindical comprometida con la cercanía, la transparencia y la transformación real de las condiciones laborales de los agremiados al SUTCBEBCS.</p>
     </div>
     <div class="mvo-grid">
       <div class="mvo-card reveal">
@@ -893,6 +938,10 @@
         <p class="mvo-text">Fortalecer la representación sindical del SUTCBEBCS mediante una gestión por resultados que garantice la defensa de los derechos de los trabajadores, la transparencia financiera y la comunicación permanente con la base.</p>
       </div>
     </div>
+        <!-- Flecha para subir -->
+      <div class="flecha-container">
+        <a href="#mision" class="btn-flecha"></a>
+      </div>
   </div>
 </section>
 
@@ -1009,7 +1058,7 @@
         </div>
       </div>
 
-      <div class="candidato-card reveal" style="transition-delay:0.6s; grid-column: 1 / -1; max-width: 420px;">
+      <div class="candidato-card reveal" style="transition-delay:0.6s;">
         <div class="candidato-secretaria"><i class="fas fa-broadcast-tower" style="color:var(--rosa);margin-right:6px"></i>Secretaría de Comunicación y Transparencia</div>
         <div class="candidato-row">
           <div class="candidato-person">
@@ -1025,8 +1074,11 @@
           </div>
         </div>
       </div>
-
     </div>
+    <!-- Flecha para subir -->
+      <div class="flecha-container">
+        <a href="#candidatos" class="btn-flecha"></a>
+      </div>
   </div>
 </section>
 
@@ -1154,7 +1206,7 @@
           <div class="prop-item">
             <div class="prop-item-dot"></div>
             <div>
-              <div class="prop-item-name">Programa deCapacitación Técnica</div>
+              <div class="prop-item-name">Programa de Capacitación Técnica</div>
               <div class="prop-item-desc">Establecer convenios con diversas instituciones y organizaciones para se oferten cursos de capacitación, artes u oficios durante los periodos de receso laboral, extendiendo este beneficio a los hijos de los trabajadores.</div>
             </div>
           </div>
@@ -1186,8 +1238,11 @@
           </div>
         </div>
       </div>
-
     </div>
+    <!-- Flecha para subir -->
+      <div class="flecha-container">
+        <a href="#propuestas" class="btn-flecha"></a>
+      </div>
   </div>
 </section>
 
@@ -1224,56 +1279,33 @@
       </div>
       <div class="sec-proposals">
         <div class="sec-prop">
-          <div class="sec-prop-title">Dirección del Proyecto Colectivo</div>
-          <div class="sec-prop-desc">Liderar la construcción del proyecto y asegurar que sea un espacio para todas las voces, representando los intereses colectivos con congruencia.</div>
+          <div class="sec-prop-title">Dirección del Proyecto</div>
+          <div class="sec-prop-desc">Liderar la construcción del proyecto asegurando que sea un espacio inclusivo para todas las voces, representando los intereses colectivos con congruencia y justicia.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Transparencia total del sindicato</div>
-          <div class="sec-prop-desc">Implementación de sistemas claros para el acceso a la información financiera y operativa, asegurando que la gestión del patrimonio y las decisiones del sindicato sean auditables y públicas para todos los agremiados.</div>
+          <div class="sec-prop-title">Transparencia Sindical</div>
+          <div class="sec-prop-desc">Implementación de vías de comunicación claras y oportunas para el acceso a la información financiera y operativa, asegurando que la gestión del patrimonio y las decisiones del sindicato sean auditables y públicas para todos los agremiados.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Asignación transparente de horas y plazas</div>
-          <div class="sec-prop-desc">Aplicación estricta de las normativas de promoción para garantizar que la entrega de horas y plazas se realice de forma justa y transparente.</div>
+          <div class="sec-prop-title">Asignación Transparente de Horas a Docentes y Plazas Administrativas</div>
+          <div class="sec-prop-desc">Aplicación estricta de las normativas de promoción para garantizar que la entrega de horas a docentes y plazas administrativas se realice de forma justa y transparente.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Defensa jurídica real e inmediata</div>
-          <div class="sec-prop-desc">Establecimiento de servicios de defensoría legal técnica y especializada para proteger al trabajador ante cualquier procedimiento administrativo o conflicto laboral, garantizando una defensa oportuna y profesional.</div>
+          <div class="sec-prop-title">Capacitación al Personal Administrativo y Docente</div>
+          <div class="sec-prop-desc">Gestionar cursos de capacitación y talleres para el personal administrativo y docente.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Estrategia de mejora salarial</div>
-          <div class="sec-prop-desc">Desarrollo de gestiones y negociaciones institucionales de alto nivel enfocadas en mejorar el poder adquisitivo y asegurar percepciones salariales dignas acordes a la labor realizada.</div>
+          <div class="sec-prop-title">Estrategia de Mejora Salarial</div>
+          <div class="sec-prop-desc">Desarrollo de gestiones y negociaciones institucionales de alto nivel enfocadas en mejorar el poder adquisitivo y asegurar percepciones salariales dignas.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Reducción de carga administrativa</div>
-          <div class="sec-prop-desc">Hora de descarga administrativa docente.</div>
+          <div class="sec-prop-title">Defensa Jurídica</div>
+          <div class="sec-prop-desc">Apoyo de defensoría legal técnica y especializada para proteger al trabajador sindicalizado ante cualquier conflicto laboral con el patrón, garantizando la defensa de los derechos de los agremiados.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Profesionalización docente útil</div>
-          <div class="sec-prop-desc">Buscar cursos de prefesionalización y especialización para administrativos y docentes.</div>
-        </div>
-        <div class="sec-prop">
-          <div class="sec-prop-title">Sistema de atención directa</div>
-          <div class="sec-prop-desc">Creación de canales directos de comunicación y respuesta rápida para atender inquietudes y solicitudes individuales de manera eficiente, eliminando barreras burocráticas.</div>
-        </div>
-        <div class="sec-prop">
-          <div class="sec-prop-title">Defensa de condiciones laborales</div>
-          <div class="sec-prop-desc">Vigilancia activa y defensa del cumplimiento de cada cláusula de los convenios y contratos colectivos para evitar cualquier vulneración de los derechos adquiridos por la base trabajadora.</div>
-        </div>
-        <div class="sec-prop">
-          <div class="sec-prop-title">Combate al favoritismo</div>
-          <div class="sec-prop-desc">Institucionalización de criterios objetivos para la toma de decisiones, con el fin de erradicar prácticas de favoritismo y asegurar la igualdad de oportunidades para toda la membresía.</div>
-        </div>
-        <div class="sec-prop">
-          <div class="sec-prop-title">Fondo de apoyo y contingencias</div>
-          <div class="sec-prop-desc">Creación de reservas financieras de apoyo destinadas a brindar auxilio económico inmediato a los compañeros ante situaciones de emergencia personal, médica o imprevistos graves.</div>
-        </div>
-        <div class="sec-prop">
-          <div class="sec-prop-title">Participación Sindical Activa</div>
-          <div class="sec-prop-desc">Fomento de espacios de debate, consulta y votación donde la voz del trabajador sea el eje central en las decisiones trascendentales para el futuro del sindicato.</div>
-        </div>
-        <div class="sec-prop">
-          <div class="sec-prop-title">Comunicación constante</div>
-          <div class="sec-prop-desc">Uso coordinado de diversas plataformas digitales e institucionales para asegurar que la información oficial llegue de manera clara, veraz y constante a todos los niveles de la organización.</div>
+          <div class="sec-prop-title">Defensa del Cumplimiento del CCT y Convenios</div>
+          <div class="sec-prop-desc">Vigilancia activa y defensa del cumplimiento de cada cláusula de los convenios y contratos colectivos para evitar cualquier vulneración de los derechos adquiridos por la base trabajadora.
+          </div>
         </div>
       </div>
     </div>
@@ -1296,19 +1328,19 @@
           <div class="sec-prop-desc">El trabajo sindical es perfectible.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Coordinación Delegacional en Centros de Trabajo</div>
-          <div class="sec-prop-desc">Establecer una agenda sistemática de reuniones presenciales en las diversas unidades de trabajo para descentralizar la atención sindical.</div>
+          <div class="sec-prop-title">Coordinar Reuniones Delegacionales</div>
+          <div class="sec-prop-desc">Establecer una agenda sistemática de reuniones presenciales en los diversos centros de trabajo para descentralizar la atención sindical.</div>
         </div>
         <div class="sec-prop">
           <div class="sec-prop-title">Actualización Integral del Padrón de Agremiados</div>
-          <div class="sec-prop-desc">Ejecutar un proceso de actualización integral de la base de datos de los agremiados, clasificando con precisión información crítica como puesto, nivel salarial y antigüedad sindical.</div>
+          <div class="sec-prop-desc">Ejecutar un proceso de actualización integral de la base de datos de los agremiados, clasificando con precisión información crítica como puesto, nivel salarial y antigüedad sindical. </div>
         </div>
         <div class="sec-prop">
           <div class="sec-prop-title">Programa de Impulso a la Identidad y Cultura Sindical</div>
           <div class="sec-prop-desc">Fomentar activamente el conocimiento de los estatutos, la historia y los valores de nuestra organización. A través de la difusión de los derechos y obligaciones de los miembros.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Trabajo Conjunto por el Agremiado</div>
+          <div class="sec-prop-title">Trabajo en Equipo</div>
           <div class="sec-prop-desc">Promover una dinámica de trabajo en equipo basada en la sinergia y la comunicación transversal entre todas las carteras del sindicato.</div>
         </div>
       </div>
@@ -1332,7 +1364,7 @@
           <div class="sec-prop-desc">Crear una base de datos actualizada que clasifique cada puesto por rama y unidad. Esto permitirá identificar vacantes de forma inmediata y agilizar los procesos de asignación sin dejar vacantes las plazas promovidas.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Sistema de transparencia en resoluciones y gestión laboral</div>
+          <div class="sec-prop-title">Transparencia en resoluciones y gestión laboral</div>
           <div class="sec-prop-desc">Diseñar un formato de informe para que sea publicado en la página de SUTCBEBCS, cuyo fin será informar sobre casos resueltos, plazas asignadas y gestiones ante la autoridad.</div>
         </div>
         <div class="sec-prop">
@@ -1340,16 +1372,16 @@
           <div class="sec-prop-desc">Elaborar un calendario de visitas a los centros de trabajo de forma mensual, una vez o cuando sea necesario, de manera que los compañeros tengan la certeza de que se les dará seguimiento a cualquier inquietud o problemática que se tenga.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Garantía de Pago al Personal Docente</div>
-          <div class="sec-prop-desc">Crear un formato de seguimiento que verifique el pago oportuno y completo para el personal docentes que cada semestre se ve afectado por incremento o disminución de horas y no se cumple con su pago completo.</div>
+          <div class="sec-prop-title">Garantía de pago al personal docente</div>
+          <div class="sec-prop-desc">Crear un formato de seguimiento que verifique el pago oportuno y completo para el personal docente que cada semestre se ve afectado por incremento o disminución de horas y no se cumple con su pago completo.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Vigilancia Normativa del Reglamento de Escalafón</div>
-          <div class="sec-prop-desc">Establecer comunicación permanente con las autoridades administrativas de COBACH BCS para asegurar que el Reglamento de Escalafón se aplique estrictamente en cada plantel, sin excepciones.</div>
+          <div class="sec-prop-title">Aplicación estricta de los reglamentos de escalafón y de la bolsa de trabajo</div>
+          <div class="sec-prop-desc">Establecer comunicación permanente con las autoridades administrativas de COBACH BCS para asegurar que los Reglamentos se apliquen estrictamente en los diferentes centros de trabajo, sin excepciones.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Control y monitoreo de cumplimiento de prestaciones según el CCT</div>
-          <div class="sec-prop-desc">Crear un tablero de seguimiento que verifique el pago oportuno y completo de todas las prestaciones de acuerdo al CCT.</div>
+          <div class="sec-prop-title">Control y seguimiento del cumplimiento de prestaciones según el CCT</div>
+          <div class="sec-prop-desc">Crear un tablero de seguimiento que verifique el pago oportuno y completo de todas las prestaciones económicas  y administrativas de acuerdo al CCT.</div>
         </div>
       </div>
     </div>
@@ -1368,24 +1400,24 @@
       </div>
       <div class="sec-proposals">
         <div class="sec-prop">
-          <div class="sec-prop-title">Gestión Financiera Transparente</div>
-          <div class="sec-prop-desc">Generar confianza entre los agremiados mediante una gestión financiera transparente y responsable.</div>
+          <div class="sec-prop-title">Finanzas Transparentes</div>
+          <div class="sec-prop-desc">Generar confianza entre los agremiados mediante informes financieros transparentes y de manera responsable.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Modernización de Procesos Financieros</div>
-          <div class="sec-prop-desc">Optimizar los procesos financieros Implementar herramientas y sistemas financieros modernos para mejorar la eficiencia en la administración de ingresos, egresos y fondos.</div>
+          <div class="sec-prop-title">Modernización de procesos financieros</div>
+          <div class="sec-prop-desc">Optimizar los procesos financieros, Implementar herramientas y sistemas modernos, para mejorar la eficiencia en la administración de los ingresos, egresos y fondos.</div>
         </div>
         <div class="sec-prop">
           <div class="sec-prop-title">Cumplimiento normativo y legalidad financiera</div>
           <div class="sec-prop-desc">Cumplir con las normativas legales y sindicales. Asegurar que todas las actividades financieras cumplan con las leyes aplicables y los estatutos del sindicato.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Estrategia de inversión y fortalecimiento patrimonial</div>
-          <div class="sec-prop-desc">Fortalecer la capacidad de inversión del sindicato. Identificar oportunidades de inversión que permitan incrementar los recursos disponibles para proyectos en beneficio de los afiliados.</div>
+          <div class="sec-prop-title">Fortalecimiento patrimonial</div>
+          <div class="sec-prop-desc">Identificar oportunidades que permitan incrementar los recursos disponibles para proyectos en beneficio de los agremiados.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Protocolo de transición y Entrega institucional</div>
-          <div class="sec-prop-desc">Facilitar la transición de comités. Garantizar una entrega ordenada y transparente de los recursos, bienes e información financiera al comité entrante.</div>
+          <div class="sec-prop-title">Estados de Cuenta de Préstamos Actualizados</div>
+          <div class="sec-prop-desc">Entrega oportuna del estado de cuenta del préstamo adquirido por el agremiado.</div>
         </div>
       </div>
     </div>
@@ -1408,23 +1440,20 @@
           <div class="sec-prop-desc">Establecer un esquema de colaboración y seguimiento con las diversas carteras del Comité Ejecutivo Estatal para la recepción, revisión e integración de sus proyectos operativos detallados.</div>
         </div>
           <div class="sec-prop">
-            <div class="sec-prop-title">Gestión Resolutiva ante Instancias de Seguridad Social</div>
-            <div class="sec-prop-desc">Acordar y resolver junto con la Secretaría General, los asuntos que sean de su competencia buscando siempre el bienestar de las y los agremiados, a través del conocimiento de sus necesidades para dar apoyo y solución inmediata ante las diferentes instancias:<br> 
-            1.- FOVISSSTE (Crédito para adquisición de casa, seguro de daños para vivienda, devolución de descuentos indebidos, cancelación de hipoteca, segundo crédito, etc.)<br> 
-            2.- ISSSTE (Clínicas, citas médicas, incapacidades, departamento de prestaciones económicas, medicina del trabajo, pensiones, etc.)<br> 
-            3.- PENSIONISSSTE. (Actualización de su expediente digital)</div>
+            <div class="sec-prop-title">Gestión ante Instancias de Seguridad Social</div>
+            <div class="sec-prop-desc">Acordar y resolver junto con la Secretaría General, los asuntos que sean de su competencia buscando siempre el bienestar de las y los agremiados, a través del conocimiento de sus necesidades para dar apoyo y solución inmediata ante las diferentes instancias: 
+            ISSSTE.
+            FOVISSSTE.
+            Pensiones.
+            </div>
           </div>
           <div class="sec-prop">
-            <div class="sec-prop-title">Vinculación Institucional </div>
-            <div class="sec-prop-desc">Fortalecer la relación con estas instituciones, buscando mejorar la atención y la respuesta a nuestras necesidades de Salud y bienestar. Así mismo con otras instituciones particulares que nos ayuden a mejorar nuestra salud física, emocional, mental y económica, tanto de las trabajadoras y los trabajadores, así como de sus familias. Esto se realizará a nivel Estatal.</div>
+            <div class="sec-prop-title">Información para Trámites</div>
+            <div class="sec-prop-desc">Elaboración de guías y difusión de material infográfico con los requisitos de los diferentes trámites que se realizan ante instituciones como ISSSTE, FOVISSSTE, PENSIONISSSTE, ETC.</div>
           </div>
           <div class="sec-prop">
-            <div class="sec-prop-title">Creación de Guías de Trámite</div>
-            <div class="sec-prop-desc">Elaboración y difusión de material infográfico con los requisitos de los diferentes trámites que se realizan en el ISSSTE, FOVISSSTE, PENSIONISSSTE, ETC.</div>
-          </div>
-          <div class="sec-prop">
-            <div class="sec-prop-title">Digitalización en Portales de Servicios</div>
-            <div class="sec-prop-desc">Con apoyo de la secretaría de Comunicación y Transparencia se realizarán los tutoriales sobre la utilización de la página del sinavid, del fovissste, del issste, etc.
+            <div class="sec-prop-title">Tutoriales para el uso de Portales de Servicios</div>
+            <div class="sec-prop-desc">Con apoyo de la secretaría de Comunicación y Transparencia se realizarán tutoriales para el manejo práctico de las páginas como SINAVID, FOVISSSTE, AsisteISSSTE, etc.
           </div>
         </div>
       </div>
@@ -1444,16 +1473,16 @@
       </div>
       <div class="sec-proposals">
         <div class="sec-prop">
-          <div class="sec-prop-title">Modernización de la gestión de actas</div>
-          <div class="sec-prop-desc">Transformar la secretaría de actas y acuerdos en una área dinámica, organizada y comprometida con informar, respaldar y servir a todos los agremiados.</div>
+          <div class="sec-prop-title">Modernización de la Cartera de Actas y Acuerdos</div>
+          <div class="sec-prop-desc">Transformar la secretaría de actas y acuerdos en un área dinámica, organizada y comprometida con informar, respaldar y servir a todos los agremiados.</div>
+        </div>
+        <div class="sec-prop">
+          <div class="sec-prop-title">Firma de Convenios</div>
+          <div class="sec-prop-desc">Impulsar la firma de convenios con comercios, clínicas, farmacias, instituciones educativas y capacitación, ópticas, laboratorios y prestadores de servicios (transporte, hospedaje, etc) que generen descuentos y beneficios para los agremiados a nivel estatal.</div>
         </div>
         <div class="sec-prop">
           <div class="sec-prop-title">Programa de simplificación digital para el agremiado</div>
-          <div class="sec-prop-desc">Diseñar infografias, guías y formatos accesibles para que cada trabajador conozca fácilmente sus trámites, derechos y procedimientos.</div>
-        </div>
-        <div class="sec-prop">
-          <div class="sec-prop-title">Programa integral de convenios para el agremiado</div>
-          <div class="sec-prop-desc">Impulsar la firma de convenios con comercios, clínicas, farmacias,  instituciones educativas, ópticas,  laboratorios y prestadores de servicios que generen descuentos y beneficios reales para las y los sindicalizados.</div>
+          <div class="sec-prop-desc">Diseñar infografias, guías y formatos accesibles para que cada trabajador conozca fácilmente los procesos para los tramites de convenios.</div>
         </div>
       </div>
     </div>
@@ -1473,19 +1502,19 @@
       <div class="sec-proposals">
         <div class="sec-prop">
           <div class="sec-prop-title">Buscador Inteligente en la Página Web Sindical</div>
-          <div class="sec-prop-desc">Desarrollo de una interfaz de búsqueda avanzada en el portal oficial del si ndicato para la localización y descarga inmediata de formatos (préstamos, seguros, reglamentos y normativas). </div>
+          <div class="sec-prop-desc">Desarrollo de una interfaz de búsqueda avanzada en el portal oficial del sindicato para la localización y descarga inmediata de formatos (préstamos, seguros, reglamentos, normativas, etc).</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Módulo de Beneficios Sindicales</div>
-          <div class="sec-prop-desc">Desarrollo de una sección exclusiva en el portal oficial del sindicato donde el agremiado podrá consultar el catálogo de convenios vigentes.</div>
+          <div class="sec-prop-title">Módulo de Convenios sindicales</div>
+          <div class="sec-prop-desc">Desarrollo de una sección exclusiva en el portal oficial del sindicato donde el agremiado pueda consultar el catálogo de convenios con instituciones y organizaciones vigentes.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Sistema de validación QR</div>
+          <div class="sec-prop-title">Sistema de Validación QR</div>
           <div class="sec-prop-desc">Integración de un verificador de estatus sindical activo enlazado directamente al código QR de la credencial física.</div>
         </div>
         <div class="sec-prop">
-          <div class="sec-prop-title">Programa Estatal "Cultura y Deporte"</div>
-          <div class="sec-prop-desc">En coordinación con la Secretaría de Organización, se creará un Calendario Deportivo y Cultural Sindical, programando torneos relámpagos y encuentros culturales entre los diversos centros de trabajo del estado.</div>
+          <div class="sec-prop-title">Fomento de "Cultura y Deporte"</div>
+          <div class="sec-prop-desc">En coordinación con la Secretaría de Organización, crear un Calendario de actividades deportivas y culturales, programando torneos relámpago y encuentros culturales en los diversos centros de trabajo.</div>
         </div>
         <div class="sec-prop">
           <div class="sec-prop-title">Proyección Nacional de Selectivos SUTCBEBCS</div>
@@ -1493,7 +1522,7 @@
         </div>
         <div class="sec-prop">
           <div class="sec-prop-title">Soporte y acompañamiento tecnológico al agremiado</div>
-          <div class="sec-prop-desc">Establecimiento de un servicio de asesoría técnica para auxiliar a los compañeros en el uso de herramientas informáticas, resolución de problemas técnicos y aprovechamiento de las plataformas digitales.</div>
+          <div class="sec-prop-desc">Establecimiento de un servicio de asesoría técnica para auxiliar a los compañeros en el uso de herramientas informáticas y aprovechamiento de las plataformas digitales a través de WhatsApp.</div>
         </div>
         <div class="sec-prop">
           <div class="sec-prop-title">Canal Oficial de Difusión en WhatsApp</div>
@@ -1502,9 +1531,16 @@
         <div class="sec-prop">
           <div class="sec-prop-title">Asistente Virtual (Bot) en Telegram y WhatsApp</div>
           <div class="sec-prop-desc">Bot diseñado para la base trabajadora que permite obtener de forma instantánea y en PDF cualquier formato necesario para trámites sindicales, prestaciones, CCT, etc.</div>
+            <div class="bot-cta">
+              <a href="https://t.me/Planilla_Rosa_bot" target="_blank" class="btn-telegram">Probar bot en Telegram (Beta)</a>
+            </div>
         </div>
       </div>
     </div>
+        <!-- Flecha para subir -->
+      <div class="flecha-container">
+        <a href="#secretarias" class="btn-flecha"></a>
+      </div>
   </div>
 </section>
 
@@ -1694,7 +1730,7 @@ function toggleFlip() {
         <div class="footer-logo-badge">R</div>
         <span class="footer-logo-text">PLANILLA ROSA</span>
       </div>
-      <p class="footer-desc">Representación sindical comprometida con la cercanía, la transparencia y la transformación real de las condiciones laborales de la base trabajadora del SUTCBEBCS.</p>
+      <p class="footer-desc">Somos una Planilla Sindical comprometida con la cercanía, la transparencia y la transformación real de las condiciones laborales de los agremiados al SUTCBEBCS.</p>
     </div>
     <div>
       <div class="footer-col-title">Navegación</div>
