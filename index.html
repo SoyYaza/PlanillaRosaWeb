@@ -1400,14 +1400,18 @@ function updateDots() {
 function maxIdx() { return Math.ceil(candidatos.length / perView) - 1; }
 
 function goTo(idx) {
-  current = Math.max(0, Math.min(idx, maxIdx()));
+  const total = Math.ceil(candidatos.length / perView);
+  
+  // Wrap circular
+  if (idx < 0) idx = total - 1;
+  if (idx >= total) idx = 0;
+  
+  current = idx;
   const card = track.querySelector('.candidato-card');
   if (!card) return;
-  const cardW = card.offsetWidth + 24; // gap 1.5rem ≈ 24px
+  const cardW = card.offsetWidth + 24;
   track.style.transform = `translateX(-${current * perView * cardW}px)`;
   updateDots();
-  btnPrev.disabled = current === 0;
-  btnNext.disabled = current >= maxIdx();
 }
 
 btnPrev.addEventListener('click', () => goTo(current - 1));
